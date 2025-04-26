@@ -3,6 +3,7 @@ import React, { useEffect } from 'react'
 import Image from 'next/image'
 import { FileClock, Home, Settings, WalletCards } from 'lucide-react'
 import { usePathname } from 'next/navigation'
+import UsageTrack from './UsageTrack'
 
 function SideNav() {
   
@@ -35,7 +36,7 @@ function SideNav() {
     console.log(path)
   },[])
   return (
-    <div className='h-screen p-5 shadow-sm border bg-white'>
+    <div className='h-screen relative p-5 shadow-sm border bg-white'>
       <div className='flex justify-center '>
         <Image src={'/logo.svg'} alt='logo' width={70} height={50}/>
       </div>
@@ -54,6 +55,9 @@ function SideNav() {
         )
         )
         }
+      </div>
+      <div className='absolute bottom-10 left-0 w-full'>
+        <UsageTrack/>
       </div>
     </div>
   )
