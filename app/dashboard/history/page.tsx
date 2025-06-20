@@ -65,4 +65,14 @@
 // )
 // }
 //  export default History 
+import React from "react";
+
+// ✅ You must export a default function from a page.tsx
+export default function HistoryPage() {
+  return (
+    <div>
+      <h1>History Page</h1>
+    </div>
+  );
+}
 
