@@ -1,3 +1,0 @@
-[build]
-  command = "npm install --legacy-peer-deps && npm run build"
-  publish = "out"  # Change this if your build output is in ".next", "dist", etc.
