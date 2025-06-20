@@ -9,14 +9,14 @@ import { db } from "@/app/utils/db";
 import React from "react";
 import Image from "next/image";
 
-export interface HISTORY{
-    id:Number,
-    formData:string,
-    aiResponse:string,
-    templateSlug:string,
-    createdBy:string,
-    createdAt:string
-}
+// export interface HISTORY{
+//     id:Number,
+//     formData:string,
+//     aiResponse:string,
+//     templateSlug:string,
+//     createdBy:string,
+//     createdAt:string
+// }
 
 
 // async function History(){
