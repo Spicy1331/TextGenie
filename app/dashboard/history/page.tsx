@@ -1,22 +1,22 @@
 
-import { AIOutput } from "@/app/utils/schema";
-import { currentUser } from "@clerk/nextjs/server"
-import { desc, eq } from "drizzle-orm";
-import { TEMPLATE } from "../_components/TemplateListSection";
-import Template from "@/app/(data)/Template";
-import { Button } from "@/components/ui/button";
-import { db } from "@/app/utils/db";
-import React from "react";
-import Image from "next/image";
+// import { AIOutput } from "@/app/utils/schema";
+// import { currentUser } from "@clerk/nextjs/server"
+// import { desc, eq } from "drizzle-orm";
+// import { TEMPLATE } from "../_components/TemplateListSection";
+// import Template from "@/app/(data)/Template";
+// import { Button } from "@/components/ui/button";
+// import { db } from "@/app/utils/db";
+// import React from "react";
+// import Image from "next/image";
 
-export interface HISTORY{
-    id:Number,
-    formData:string,
-    aiResponse:string,
-    templateSlug:string,
-    createdBy:string,
-    createdAt:string
-}
+// export interface HISTORY{
+//     id:Number,
+//     formData:string,
+//     aiResponse:string,
+//     templateSlug:string,
+//     createdBy:string,
+//     createdAt:string
+// }
 
 
 // async function History(){
