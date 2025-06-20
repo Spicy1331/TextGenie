@@ -1,4 +1,4 @@
-"use client"
+
 import { AIOutput } from "@/app/utils/schema";
 import { currentUser } from "@clerk/nextjs/server"
 import { desc, eq } from "drizzle-orm";
