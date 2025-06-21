@@ -13,11 +13,11 @@ function SideNav() {
       icon:Home,
       path:'/dashboard'
     },
-    {
-      name:'History',
-      icon:FileClock,
-      path:'/dashboard/history'
-    },
+    // {
+    //   name:'History',
+    //   icon:FileClock,
+    //   path:'/dashboard/history'
+    // },
     {
       name:'Billing',
       icon:WalletCards,
