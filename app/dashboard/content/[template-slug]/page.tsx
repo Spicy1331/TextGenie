@@ -31,8 +31,9 @@ function CreateNewContent(props:PROPS) {
      const {totalUsage,setTotalUsage}=useContext(TotalUsageContext);
 
      const GenerateAIContent=async(formData:any)=>{
-      if(totalUsage>=10000){
-        console.log("Please Upgrade");
+      const isPremium = typeof window !== 'undefined' && localStorage.getItem('user_plan') === 'premium';
+      if(!isPremium && totalUsage>=10000){
+        alert("You have reached your free credit limit of 10,000 words! Please upgrade to Premium in the Billing section to get unlimited credits.");
         return ;
       }
       setLoading(true);
@@ -53,8 +54,10 @@ function CreateNewContent(props:PROPS) {
         createdBy:user?.primaryEmailAddress?.emailAddress,
         createdAt:moment().format('DD/MM/YYYY'),
       });
-      console.log(result);
       
+      const wordCount = aiResp.split(/\s+/).filter((w) => w.length > 0).length;
+      setTotalUsage((prev: number) => prev + wordCount);
+      console.log(result);
      }
   return (
     <div className='p-10'>
